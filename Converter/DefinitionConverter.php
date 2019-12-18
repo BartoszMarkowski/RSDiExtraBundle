@@ -89,7 +89,7 @@ class DefinitionConverter
             ->setArguments($classMeta->arguments)
             ->setLazy($classMeta->lazy)
             ->setProperties($classMeta->properties)
-            ->setDecoratedService($classMeta->decorates, $classMeta->decorationInnerName, $classMeta->decorationPriority)
+            ->setDecoratedService($classMeta->decorates, $classMeta->decorationInnerName, $classMeta->decorationPriority ?? 0)
             ;
     }
 
