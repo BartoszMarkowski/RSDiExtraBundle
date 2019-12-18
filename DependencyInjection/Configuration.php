@@ -16,7 +16,6 @@ class Configuration implements ConfigurationInterface
     {
         $builder = new TreeBuilder('rs_di_extra', 'array');
         $builder
-            ->root('rs_di_extra', 'array')
                 ->children()
                     ->arrayNode('locations')
                         ->addDefaultsIfNotSet()
